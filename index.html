@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="html-pd0">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>寿命计算器</title>
+	<meta id="description" name="description" itemprop="description" content="美国波士顿大学的测试，据说超准，快来看看你能活到多少岁！">
+	<meta id="name" itemprop="name" content="寿命计算器">
+	<meta id="image" itemprop="image" content="img/resultImg.jpg">
+    <link rel="stylesheet" href="./common/css/main.css" />
+	<link rel="stylesheet" href="css/forum9.css?v20141224" />
+	<link href="./common/css/mobiscroll/mobiscroll.scroller.css" rel="stylesheet" type="text/css" />
+    <link href="./common/css/mobiscroll/mobiscroll.scroller.sense-ui.css" rel="stylesheet" type="text/css" />
+</head>
+<script>
+var pajkPage = "mobilePage";
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F32f66a9b6206cae98be737ce7d19e751' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<body name="resultScore">
+<section>
+<div class="g-mobile topic-sel9">
+	<div>
+		<a name="0" class="topic-btn">开始测试</a>
+		<div class="logo-txt">fuckcopy.com出品</div>
+	</div>
+	<div class="forum-date">
+		<div data-role="fieldcontain" class="demo-cont" id="demo_cont_date">
+            <label for="demo_date">请输入您的生日</label>
+            <input type="text" id="demo_date"/>  
+        </div>
+		<div class="topic-sel-btn">
+			<h4>请选择您的性别</h4>
+			<a title="forum" name="0"><img src="img/man.png" /></a>
+			<a title="forum" name="1"><img src="img/female.png" /></a>
+		</div>
+	</div>
+</div>
+<div class="g-mobile topic-list display-none height-auto">
+	<div class="topic-page" style="display:none;">
+		<div class="page-box">
+			<span class="current"></span>
+			<span>of<em class="amount"></em></span>
+		</div>
+	</div>
+	<div class="topic-tit"><img src="img/title.png" /><div class="tit-txt"><span class="current"></span><span>/</span><span class="amount"></span></div></div>
+	<div class="g-test f-clx" id="topic">
+		<dl>
+			<dt></dt>
+			<dd id="topicSel"></dd>
+		</dl>
+	</div>
+</div>
+<div class="g-mobile topic-result display-none height-auto">
+	<div id="shareOverlay" class="share_overlay"></div>
+	
+</div>
+
+</section>
+
+</body>
+<script src="./common/script/zepto.js"></script>
+<script src="./common/script/main.js"></script>
+<script src="./common/script/mobiscroll/mobiscroll.zepto.js" type="text/javascript"></script>
+    <script src="./common/script/mobiscroll/mobiscroll.core.js" type="text/javascript"></script>
+    <script src="./common/script/mobiscroll/mobiscroll.scroller.js" type="text/javascript"></script>
+
+    <script src="./common/script/mobiscroll/mobiscroll.datetime.js" type="text/javascript"></script>
+    <script src="./common/script/mobiscroll/mobiscroll.select.js" type="text/javascript"></script>
+
+    <script src="./common/script/mobiscroll/mobiscroll.scroller.android.js" type="text/javascript"></script>
+
+    <script src="./common/script/mobiscroll/mobiscroll.i18n.zh.js" type="text/javascript"></script>
+<script src="script/result.js"></script>
+<script src="./common/script/timecount/TimeCount.js"></script>
+<script src="./common/config/timeRub.js"></script>
+<script src="script/share.js"></script>
+<script>
+$(function(){
+    $('#demo_date').mobiscroll().date({
+        theme: 'ios',
+        lang: 'zh',
+        display: 'bottom',
+        mode: 'scroller',
+		minDate: new Date(1900,1,1,12,0,0),  // More info about minDate: http://docs.mobiscroll.com/2-14-2/datetime#!opt-minDate
+        maxDate: new Date(),   // More info about maxDate: http://docs.mobiscroll.com/2-14-2/datetime#!opt-maxDate
+		startYear : 1900,
+        stepMinute: 5
+    });
+	var activate = ('createTouch' in document) ? 'touchend' : 'click';
+	var touchstart = ('createTouch' in document) ? 'touchstart' : 'click'; 
+	$(".topic-btn").live(activate, function(event) {
+		$(this).parent().hide().next().show();
+	});
+});
+
+</script>
+</html>

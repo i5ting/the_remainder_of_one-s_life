@@ -1,0 +1,42 @@
+.topic-sel9{background:url("../img/img_bg.jpg") #009bd1 no-repeat; background-size:100% auto;width:auto;}
+.topic-list, .topic-result, .sel-topic{background:#eae9e4;}
+.topic-btn{display:block;position:absolute;bottom:30px;left:5%;background:#f5f5f5;width:90%;height:40px;line-height:36px;border-radius:10px;border:2px solid #fff;color:#30b3df;text-align:center;-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+.forum-date{display:none;background:#eae9e4;width:100%;height:100%;overflow:hidden;}
+.demo-cont{padding:50px 10%;}
+.demo-cont input{width:100%;height:40px;background:#fff;border:1px solid #ccc;border-radius:10px;margin-top:10px;}
+.topic-sel-btn{float:left;text-align:left;width:100%;position:static;color:#333;padding:0 10%;}
+.topic-sel-btn a{float:left;width:40%; margin-right:20px;border-right:1px solid #ccc;}
+.topic-sel-btn a:last-child,.g-test dt,.g-test li{border:none;}
+.g-test{background:none;}
+.topic-tit{position:relative;width:70%;top:0;margin:0 auto 15px;padding:50px 0 0 0;}
+.tit-txt{position:absolute;top:55px;width:100%;color:#fff;text-align:center;}
+.topic-tit img{width:100%;}
+.topic-sel-btn img{width:70%;margin:10px 5%; }
+.g-test li a{background:url(../img/select.png) no-repeat;background-position:0 12px;background-size:25px auto;padding-left:30px;}
+.g-test li a.active{color:#30b4df;background:url(../img/select_act.png) no-repeat;background-position:0 7px;background-size:25px auto;}
+.current{display:inline;position:static;background:none;border:none;}
+.amount{margin:0;}
+.test-result{padding:30px 20px 0;}
+.result-title{position:relative;padding:0;}
+.result-title h4{position:absolute;width:100%;left:0;top:50%;margin-top:-1.2em;color:#fff;text-align:center;}
+.color-blue{color:#30b4df;}
+#timer,#result-progress{text-align:center;margin:10px 0;}
+.dis-block{display:block;}
+.topic-result p{padding:10px 0;}
+.result-btn{margin-right:10px;}
+.result-btn-grey{background:#f7f7f7;color:#30b4df;}
+.progress{position:relative;background:#d5d3cc;width:100%;height:20px;border-radius:2px;overflow:hidden;}
+.progress-percent{position:absolute;left:0;top:0;background:url("../img/progress.png");height:100%;}
+.people{background:url("../img/people.png");background-size:20px auto;width:20px;height:22px;margin-left:-10px}
+.result-down{float:left;margin:15px 0 0;}
+.logo-txt{position:absolute;width:100%;text-align:center;color:#49cfff;bottom:5px;font-size:80%;}
+.share_overlay{	
+	display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+	background:url("../img/share.png") no-repeat rgba(0, 0, 0, 0.7); background-size:100% auto;   
+    z-index:999;	
+}
